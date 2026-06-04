@@ -1,7 +1,7 @@
-public class Swap {
-    public static void main(String[] args) {
-        int a =10;
-        int b=20;
+public class Swap{
+    public static void main(String[]args){
+        int a=10;
+        int b=30;
         int temp=a;
         a=b;
         b=temp;
