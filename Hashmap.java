@@ -6,8 +6,8 @@ public class Hashmap {
         for(int i=0;i<arr.length;i++){
             int num=arr[i];
             int frequency=map.getOrDefault(num,0); //it is used to get the frequency of the num for ex num=1 so initially map is empty so it will return the freq 0 if its present in map so it will return its frequency but not 0
-            frequency=frequency+1;
-            map.put(num,frequency);
+            frequency=frequency+1;// here frequency+1 means if frequency of num is 0 means in map there exist no frequency of that num but since we are checking that num so frequency is 1 so thats why frequency +1 so frequency for checking if it exists in map and +1 for being on that num
+            map.put(num,frequency);//put adds a key-value pair to the hashmap ex map.put(6,2); means 5->3 means 5 occurred 3 times
         }
         System.out.println(map);
     }
